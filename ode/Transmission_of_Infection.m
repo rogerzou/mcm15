@@ -1,8 +1,9 @@
-function G = Transmission_of_Infection( a, k, h, I, S )
+function G = Transmission_of_Infection( k, l, a, S, I, A)
 %TRANSMISSION_OF_INFECTION 
 %   Quantifies Transmission of Infection
 
-G = (k*I)/(1+(a*(I/S)^h)); 
+x = (I+A)/S; 
+G = (S*k*(x^l))/(1+a*x); 
 
 end
 
