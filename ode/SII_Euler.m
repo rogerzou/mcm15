@@ -13,8 +13,8 @@ A = [A_initial zeros(1,n)];
 % Forward Euler's Method: 
 for i = 1:n 
     t(i+1) = t(i)+t_step; 
-    S(i+1) = S(i)+t_step*(-1*Transmission_of_Infection(1, 2, 1, S(i), I(i), A(i)));
-    I(i+1) = I(i)+t_step*(Transmission_of_Infection(1, 2, 1, S(i), I(i), A(i))-r*I(i)); 
+    S(i+1) = S(i)+t_step*(-1*Transmission_of_Infection(120, 2, 1, S(i), I(i), A(i)));
+    I(i+1) = I(i)+t_step*(Transmission_of_Infection(120, 2, 1, S(i), I(i), A(i))-r*I(i)); 
     A(i+1) = r*I(i) - d*A(i); 
 end 
 
