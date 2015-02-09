@@ -1,8 +1,8 @@
-function [ M, info ] = generateInitialGraph(filename)
+function [ B, info ] = generateInitialGraph(filename)
 %GENERATEINITIALGRAPH Loads adjacency matrix from file
 
 graph = load(filename);
-M = sparse(graph.M);
+B = sparse(graph.B);
 info = graph.info;
 
 end
